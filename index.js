@@ -30,17 +30,32 @@ For example, using figures in July 2008:
 
 
 
+let poo = 80
+if (poo>90){
+   time = 'now';
+} else {
+   time = 'later'
+}
+console.log('Please flush', time)
+
+
 let bigMacUs = 5.66
 let bigMacUk = 3.19
 let powerParityUk = bigMacUs / bigMacUk
 let exchangeRateUk = 1.39
 let bigMacIndexUk = ((exchangeRateUk - powerParityUk) / powerParityUk) * 100
 
-
-
 console.log("Big Mac Price in US: $", bigMacUs)
 console.log("Big Mac Index US to UK: ", bigMacIndexUk.toFixed(0), "%")
 console.log("Does the Big Mac cost more in the UK?", bigMacIndexUk>0 || bigMacIndexUk===0)
+
+if (bigMacIndexUk>0){
+   worth = 'a rip off'
+} else {
+   worth = 'better value'
+}
+console.log('Big Macs from here are', worth, '!')
+
 
 
 let bigMacSwitz = 6.50
@@ -51,6 +66,13 @@ let bigMacIndexSwitz = ((exchangeRateSwitz - powerParitySwitz) / powerParitySwit
 console.log("Big Mac Index US to Switzerland: ", bigMacIndexSwitz.toFixed(0), "%")
 console.log("Does the Big Mac cost more in Switzerland?", bigMacIndexSwitz>0 || bigMacIndexSwitz===0)
 
+if (bigMacIndexSwitz>0){
+   worth = 'a rip off'
+} else {
+   worth = 'better value'
+}
+console.log('Big Macs from here are', worth, '!')
+
 
 let bigMacNor = 54
 let powerParityNor = bigMacUs / bigMacNor
@@ -59,6 +81,13 @@ let bigMacIndexNor = ((exchangeRateNor - powerParityNor) / powerParityNor) * 100
 
 console.log("Big Mac Index US to Norway: ", bigMacIndexNor.toFixed(0), "%")
 console.log("Does the Big Mac cost more in Norway?", bigMacIndexNor>0 || bigMacIndexNor===0)
+
+if (bigMacIndexNor>0){
+   worth = 'a rip off'
+} else {
+   worth = 'better value'
+}
+console.log('Big Macs from here are', worth, '!')
 
 
 let bigMacFran = 4.12
@@ -69,6 +98,13 @@ let bigMacIndexFran = ((exchangeRateFran - powerParityFran) / powerParityFran) *
 console.log("Big Mac Index US to France: ", bigMacIndexFran.toFixed(0), "%")
 console.log("Does the Big Mac cost more in France?", bigMacIndexFran>0 || bigMacIndexFran===0)
 
+if (bigMacIndexFran>0){
+   worth = 'a rip off'
+} else {
+   worth = 'better value'
+}
+console.log('Big Macs from here are', worth, '!')
+
 
 let bigMacSKor = 4500 
 let powerParitySKor = bigMacUs / bigMacSKor
@@ -77,3 +113,10 @@ let bigMacIndexSKor = ((exchangeRateSKor - powerParitySKor) / powerParitySKor) *
 
 console.log("Big Mac Index US to SKorea: ", bigMacIndexSKor.toFixed(0), "%")
 console.log("Does the Big Mac cost more in SKorea?", bigMacIndexSKor>0 || bigMacIndexSKor===0)
+
+if (bigMacIndexSKor>0){
+   worth = 'a rip off'
+} else {
+   worth = 'better value'
+}
+console.log('Big Macs from here are', worth, '!')
